@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Post from './components/Post';
 import Todo from './components/Todo';
+import Users from './components/Users';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     path: "/todo",
     element: <Todo />,
     loader: async () => await fetch('https://jsonplaceholder.typicode.com/todos')
+  },
+  {
+    path: '/user',
+    element: <Users />
   }
 ]);
 
