@@ -41,7 +41,7 @@ export default function Users() {
                         <div className="mt-4">
                             <h3 className="font-semibold">Company:</h3>
                             <p className="text-gray-600">{user.company.name}</p>
-                            <p className="text-gray-600 italic">"{user.company.catchPhrase}"</p>
+                            <p className="text-gray-600 italic">{user.company.catchPhrase}</p>
                         </div>
                     </div>
                 ))}
